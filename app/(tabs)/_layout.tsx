@@ -27,16 +27,19 @@ export default () => {
         return <Ionicons name={iconName} size={size} color={color} />;
       },
       tabBarActiveTintColor: theme.colors.primary,
+
+    
       tabBarInactiveTintColor: 'gray'
     })}>
 
       { /*Order of tabs*/ }
       <Tabs.Screen name="home" options={{href: null}}/>
-      <Tabs.Screen name="shop" options={{title: "Shop"}}/> 
+      <Tabs.Screen name="about" options={{title: "About"}}/> 
       <Tabs.Screen name="plans" options={{title: "Plans"}}/>
       <Tabs.Screen name="workout" options={{title: "Workout"}}/>
       <Tabs.Screen name="friends" options={{title: "Friends"}}/>
-      <Tabs.Screen name="account" options={{title: "Account"}}/>
+      <Tabs.Screen name="profile" options={{title: "Profile"}}/>
+
     </Tabs>
   );
 }
